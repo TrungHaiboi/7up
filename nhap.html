@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>		
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="css/nhap.css">
+</head>
+<body>
+        <ul>
+            <li class="active"><a href="#"> Trang chủ</a></li>
+            <li ><a href="#"> Trang chủ</a></li>
+            <li><a href="#"> Khoa học</a></li>
+            <li><a href="#"> Tin học </a></li>
+            <li><a href="#"> Trang chủ</a></li>
+            <li ><a href="#"> Trang chủ</a></li>
+        </ul>
+</body>
+<script >
+    $(document).on('click', 'ul li', function() {
+          $(this).addClass('active').siblings().removeClass('active')
+      });
+  </script>
+</html>
